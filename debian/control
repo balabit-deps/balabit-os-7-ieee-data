@@ -1,0 +1,16 @@
+Source: ieee-data
+Section: net
+Priority: optional
+Maintainer: Luciano Bello <luciano@debian.org>
+Build-Depends: debhelper (>= 9.0.0)
+Homepage: http://standards.ieee.org/regauth/oui/index.shtml
+VCS-Svn: svn://anonscm.debian.org/collab-maint/deb-maint/ieee-data/trunk
+VCS-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/ieee-data/trunk
+Standards-Version: 4.1.2
+
+Package: ieee-data
+Architecture: all
+Depends: ${misc:Depends}, wget | libwww-perl | curl
+Description: OUI and IAB listings
+ Provide the Organizationally Unique Identifier (OUI) and Individual Address 
+ Block (IAB) listings of identifiers assigned by IEEE Standards Association.
